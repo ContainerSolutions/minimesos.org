@@ -8,10 +8,6 @@
 		<title>Minimesos</title>
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 
-
-		<!-- Bootstrap -->
-		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -63,8 +59,70 @@
 
 					<!-- Tab panes -->
 					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane active" id="gradle"></div>
-						<div role="tabpanel" class="tab-pane" id="maven"></div>
+						<div role="tabpanel" class="tab-pane active" id="gradle">
+
+							<h3>Step 1. Add the JitPack repository to your gradle build file:</h3>
+							<div class="instructions-content">
+								<code>
+								repositories {<br/>
+								&nbsp;&nbsp;// ...<br/>
+								&nbsp;&nbsp;maven { url "https://jitpack.io" }<br/>
+								&nbsp;}
+								</code>
+							</div>
+							<h3>Step 2. Add the dependency in the form:</h3>
+							<div class="instructions-content">
+								<code>
+								dependencies {<br/>
+								&nbsp;&nbsp;compile 'com.containersolutions:mini-mesos:0.2.11'<br/>
+								&nbsp;}
+								</code>
+							</div>
+							<h3>Step 3. Add a @ClassRule in your tests to start and destroy your Mesos test cluster</h3>
+							<div class="instructions-content">
+								<code>
+								@ClassRule<br/>
+								&nbsp;public static final MesosCluster CLUSTER = new MesosCluster(<br/>
+								&nbsp;&nbsp;MesosClusterConfig.builder()<br/>
+								&nbsp;&nbsp;&nbsp;.numberOfSlaves(3)<br/>
+								&nbsp;&nbsp;&nbsp;.build()<br/>
+								&nbsp;);<br/>
+								</code>
+							</div>
+
+							
+						</div>
+						<div role="tabpanel" class="tab-pane" id="maven">
+							<h3>Step 1. Add the JitPack repository to your gradle build file:</h3>
+							<div class="instructions-content">
+								<code>
+								&lt;repository&gt;<br/>
+&nbsp;&nbsp;&lt;id&gt;jitpack.io&lt;/id&gt;<br/>
+&nbsp;&nbsp;&lt;url&gt;https://jitpack.io&lt;/url&gt; <br/>&lt;/repository&gt;
+								</code>
+							</div>
+							<h3>Step 2. Add the dependency in the form:</h3>
+							<div class="instructions-content">
+								<code>
+								&lt;dependency&gt;<br/>
+&nbsp;&nbsp;&lt;groupId&gt;com.containersolutions&lt;/groupId&gt; <br/>
+&nbsp;&nbsp;&lt;artifactId&gt;mini-mesos&lt;/artifactId&gt;<br/>
+&nbsp;&nbsp;&lt;version&gt;0.2.11&lt;/version&gt; <br/>
+&lt;/dependency&gt;
+								</code>
+							</div>
+							<h3>Step 3. Add a @ClassRule in your tests to start and destroy your Mesos test cluster</h3>
+							<div class="instructions-content">
+								<code>
+								@ClassRule<br/>
+								&nbsp;public static final MesosCluster CLUSTER = new MesosCluster(<br/>
+								&nbsp;&nbsp;MesosClusterConfig.builder()<br/>
+								&nbsp;&nbsp;&nbsp;.numberOfSlaves(3)<br/>
+								&nbsp;&nbsp;&nbsp;.build()<br/>
+								&nbsp;);<br/>
+								</code>
+							</div>
+						</div>
 					</div>
 
 				</div>
