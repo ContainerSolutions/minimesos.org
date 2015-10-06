@@ -11628,5 +11628,5 @@ return jQuery;
 }));
 
 },{}],6:[function(require,module,exports){
-var css = "@media (min-width: 970px) {\n\t.container {\n\t\twidth:970px;\n\t\tborder:1px solid black;\n\t\t\n\t}\n\t.col-md-4, .col-md-8 {\n\t\tborder:1px solid black;\n\t}\n\t.header {\n\t\t\n\t}\n\t.instructions {\n\t\t\n\t}\n}\n"; (require("/Users/aleks/Sites/mini-mesos-www/node_modules/cssify"))(css); module.exports = css;
+var css = ".header h4 {\n\tfont-family: 'lato';\n\tfont-size: 34px;\n\tcolor: #1c97e6;\n}\n@media (min-width: 970px) {\n\tbody {\n                \n\t}\n\t.container {\n\t\twidth:970px;\n\t}\n\t.col-md-4, .col-md-8 {\n\t\tborder:1px solid black;\n\t}\n\t.header-bg {\n\t\theight:550px;\n\t\tbackground: url(\"/assets/images/Background_1600x900px.jpg\");                \n\t\tbackground-size:970px;\n\t\tbackground-position:top left;\n\t\tbackground-repeat:repeat-x;\n\t}\n\t.header {\n                margin-top:134px;\n\t\tmargin-bottom:100px;\n\t}\n\t.header-logo {\n\t\twidth:220px;\n\t\theight:230px;\n\t\tbackground:url(\"/assets/images/MiniMesos_Logo.png\") no-repeat;\n\t\tbackground-size:220px;\n\t}\n\t.instructions {\n\t\t\n\t}\n}\n"; (require("/Users/aleks/Sites/mini-mesos-www/node_modules/cssify"))(css); module.exports = css;
 },{"/Users/aleks/Sites/mini-mesos-www/node_modules/cssify":4}]},{},[1]);
