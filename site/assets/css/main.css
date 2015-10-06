@@ -1,15 +1,19 @@
-.header h4 {
+body {
 	font-family: 'Lato';
+	font-weight: 300;
+}
+.header h4 {
 	font-size: 34px;
 	color: #1c97e6;
 }
 .github {
+	position:absolute;	
 	width:60px;
 	height:80px;
 	background-image: url("/assets/images/GitHUB_Button_96x109px.png");
 	background-repeat:no-repeat;
 	background-size:100%;
-	right:170px;
+	right:10px;
 	top:20px;
 }
 .infographic {
@@ -29,7 +33,6 @@
 	list-style-image: url("/assets/images/Blue_Arrow.png");
 }
 .infographic-pane ul li {
-        font-family:'Lato';
 	font-weight:300;
 	font-size:20px;
 	margin-bottom:7px;
@@ -40,7 +43,9 @@
 	background-position:top left;
 	background-repeat:no-repeat;
 	background-size:970px;
-	height:700px;
+	padding:60px;
+        
+	/* height:700px; */
 }
 
 .instructions-content {
@@ -59,20 +64,19 @@
 	border-bottom:3px solid #4E899A;
 }
 .instructions .tab-content h3 {
-	font-family: 'Lato';
 	font-size: 15px;
 }
 .instructions .nav-pane {
 	width:600px;
-	margin-top:20px;
+        
 }
-
 
 .instructions .nav-tabs > li > a {
 	border: medium none;
         padding:3px 15px 3px 15px;
 	color: #048a9b;
 }
+
 .instructions .nav-tabs > li > a:hover{
 	background-color: #4E899A !important;
 	border: medium none;
@@ -85,6 +89,18 @@
 	background-color: #4E899A !important;
 	color:#fff;
 	border:none;
+}
+
+.facts {
+	margin:60px 0 60px;
+}
+.facts h3 {
+	font-weight:900;
+	font-size:24px;
+	color:#4c4c4c;
+}
+.facts p {
+	font-size:20px;
 }
 
 @media (min-width: 970px) {
