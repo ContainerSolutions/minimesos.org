@@ -1,0 +1,16 @@
+@media (min-width: 970px) {
+	.container {
+		width:970px;
+		border:1px solid black;
+		
+	}
+	.col-md-4, .col-md-8 {
+		border:1px solid black;
+	}
+	.header {
+		
+	}
+	.instructions {
+		
+	}
+}
