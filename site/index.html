@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>Minimesos</title>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 
 
 		<!-- Bootstrap -->
@@ -23,6 +23,7 @@
 	</head>
 	<body>
 		<div class="container">
+			<div class="github affix"></div>
 			<div class="row header-bg">
 				<div class="header col-md-6 col-md-offset-3 text-center">
 					<div class="header-logo center-block">
@@ -31,9 +32,22 @@
 					<h4>Testing infrastructure for Mesos frameworks</h4>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-8">Abc</div>
-				<div class="col-md-4">Abc</div>	
+			<div class="row infographic-pane">
+				<div class="col-md-8">
+					<div class="infographic"></div>
+					
+				</div>
+				<div class="col-md-4">
+					<p>
+						<ul>
+							<li>Test Driven Development for Mesos frameworks</li>
+							<li>Add a MiniMesos JUnit @ClassRule to start containerized Mesos cluster</li>
+							<li>Start the scheduler of your framework</li>
+							<li>Perform assertions on the cluster state via MiniMesos API</li>
+							<li>After the test is done the cluster is destroyed</li>
+						</ul>
+					</p>
+				</div>	
 			</div>
 			<div class="instructions row">
 				<h4>Installation instructions</h4>

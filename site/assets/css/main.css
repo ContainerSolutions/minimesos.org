@@ -1,9 +1,42 @@
 .header h4 {
-	font-family: 'lato';
+	font-family: 'Lato';
 	font-size: 34px;
 	color: #1c97e6;
 }
+.github {
+	width:60px;
+	height:80px;
+	background-image: url("/assets/images/GitHUB_Button_96x109px.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+	right:170px;
+	top:20px;
+}
+.infographic {
+	background-image: url("/assets/images/Infographic_574x433.png");
+	background-position:top right;
+	width:600px;
+	/* border:1px solid black; */
+	height:500px;
+	background-repeat:no-repeat;
+	background-size:80%;
+	margin-top:10px;
+}
+.infographic-pane {
+	margin-top:30px;
+}
+.infographic-pane ul {
+	list-style-image: url("/assets/images/Blue_Arrow.png");
+}
+.infographic-pane ul li {
+        font-family:'Lato';
+	font-weight:300;
+	font-size:20px;
+	margin-bottom:7px;
+}
+
 @media (min-width: 970px) {
+	
 	body {
                 
 	}
@@ -11,7 +44,7 @@
 		width:970px;
 	}
 	.col-md-4, .col-md-8 {
-		border:1px solid black;
+                
 	}
 	.header-bg {
 		height:550px;
@@ -30,6 +63,7 @@
 		background:url("/assets/images/MiniMesos_Logo.png") no-repeat;
 		background-size:220px;
 	}
+        
 	.instructions {
 		
 	}
