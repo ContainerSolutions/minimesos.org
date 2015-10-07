@@ -163,7 +163,7 @@ body {
 	}
 
 	.header-bg {
-		/* height:450px;	 */
+		height:450px;	
                 background-size:750px;
                 
 	}
@@ -180,6 +180,7 @@ body {
 	.header-bg .header h4 {
                 margin-left:175px;
                 width:400px;
+		font-size:25px;
 	}
 	.github {
 		position:absolute;	
@@ -357,7 +358,7 @@ body {
 	}
 	
 	.header-bg {
-		/* height:550px;	 */
+		height:180px;	
                 background-size:320px;                
 	}
 
@@ -368,25 +369,57 @@ body {
 	}
 	
 	.infographic {
-		width:550px;
-		background-size:550px;
-		height:450px;
+		width:300px;
+		background-size:300px;
+		height:250px;
+	}
+
+	.infographic-pane ul {
+		width:320px;
+	}
+
+	.infographic-pane ul li {
+		font-weight:300;
+		font-size:15px;
+		margin-bottom:7px;
 	}
 	
 	.instructions {
-		background-size:970px;
+		background-size:320px;
+		background-repeat:repeat-y;
 	}
 
+	.instructions .nav-tabs, .instructions .tab-content h3, .instructions-content {
+		width:200px;
+	}
+
+	.facts .col-xs-6 {
+		width:320px;
+	}
+
+	.download {
+		height:120px;
+	}
+	
 	.download .download-area {
-		width:780px;
-		height:150px;
+		width:320px;
+		height:90px;
+		background-size:320px;
 		margin-top:30px;
-		padding:30px 0 0 250px;
+		padding:1px 20px 20px 10px;
+               
 	}
 
 	.download-content {
-		padding: 20px;
-		width:500px;
+		padding:5px 5px 5px 5px;
+		font-size:10px;
+		margin:10px 10px 10px 100px;
+                
+		width:200px;
+	}
+
+	.download-content code {
+                
 	}
 
 }
