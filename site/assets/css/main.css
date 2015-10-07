@@ -8,14 +8,20 @@ body {
 }
 .github {
 	position:absolute;	
-	width:60px;
-	height:80px;
-	background-image: url("/assets/images/GitHUB_Button_96x109px.png");
-	background-repeat:no-repeat;
-	background-size:100%;
-	right:10px;
+	width:40px;
+	height:60px;
+	/* background-image: url("/assets/images/GitHUB_Button_96x109px.png");
+	   background-repeat:no-repeat;
+	   background-size:100%; */
+	right:20px;
 	top:20px;
 }
+
+.github img {
+	height:40px;
+        
+}
+
 .infographic {
 	background-image: url("/assets/images/Infographic_574x433.png");
 	background-position:top right;
@@ -109,8 +115,24 @@ body {
 	background-size:970px;
 	background-repeat:no-repeat;
 	background-position:top left;
+	/* padding-bottom:80px; */
 	height:200px;
-	
+}
+
+
+.download .download-area {
+	background-image:url("/assets/images/Download_Button_780x150px.jpg");
+	background-repeat:no-repeat;
+	width:780px;
+	height:150px;
+	margin-top:30px;
+	padding:30px 0 0 250px;
+}
+
+.download-area span {
+	font-weight:700;
+	font-size:15px;
+	color: #f6f6f6;
 }
 
 .download-content {
@@ -124,15 +146,16 @@ body {
 .download-content code {
 	color:white;
 	background-color: #333333;
+        
 }
 
-.download .download-area {
-	background-image:url("/assets/images/Download_Button_780x150px.jpg");
-	background-repeat:no-repeat;
-	width:780px;
-	height:150px;
-	margin-top:30px;
-	padding:30px 0 0 250px;
+.footer {
+	background-color:#4c4c4c;
+	padding:20px;
+}
+
+.footer img {
+	margin:10px;
 }
 
 @media (min-width: 970px) {
