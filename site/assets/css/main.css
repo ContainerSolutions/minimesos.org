@@ -26,9 +26,6 @@ body {
 	height:60px;
 }
 
-.github img {
-	height:40px;
-}
 
 .infographic {
 	background-image: url("/assets/images/Infographic_574x433.png");
@@ -300,6 +297,10 @@ body {
 		right:-200px;
 		top:-100px;		
 	}
+
+	.github img {
+		width:70px;
+	}
 	
 	.header {
 		margin-top:134px;
@@ -361,6 +362,10 @@ body {
 		right:10px;
 		top:-30px;
 	}
+
+	.github img {
+		width: 20px;
+	}
 	
 	.header-bg {
 		height:180px;	
@@ -412,19 +417,17 @@ body {
 		background-size:320px;
 		margin-top:30px;
 		padding:1px 20px 20px 10px;
-               
+		
 	}
 
 	.download-content {
 		padding:5px 5px 5px 5px;
 		font-size:10px;
 		margin:10px 10px 10px 100px;
-                
 		width:200px;
 	}
 
 	.download-content code {
                 
 	}
-
 }
