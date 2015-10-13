@@ -15,7 +15,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
                 
 		<![endif]-->
-		<script src="/assets/main.js"></script>
+		<script src="/assets/js/main.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -34,16 +34,16 @@
 					
 				</div>
 				<div class="col-xs-6 col-md-4">
-					<p>
-						<ul>
-							<li>Test Driven Development for Mesos frameworks</li>
-							<li>Add a MiniMesos JUnit @ClassRule to start containerized Mesos cluster</li>
-							<li>Start the scheduler of your framework</li>
-							<li>Perform assertions on the cluster state via MiniMesos API</li>
-							<li>After the test is done the cluster is destroyed</li>
-						</ul>
-					</p>
+					<ul>
+						<li>Test Driven Development for Mesos frameworks</li>
+						<li>Add a MiniMesos JUnit @ClassRule to start containerized Mesos cluster</li>
+						<li>Start the scheduler of your framework</li>
+						<li>Perform assertions on the cluster state via MiniMesos API</li>
+						<li>After the test is done the cluster is destroyed</li>
+					</ul>
+
 				</div>	
+
 			</div>
 			<div class="instructions row">
 				<div class="nav-pane center-block">
@@ -93,7 +93,7 @@
 							
 						</div>
 						<div role="tabpanel" class="tab-pane" id="maven">
-							<h3>Step 1. Add the JitPack repository to your gradle build file:</h3>
+							<h3>Step 1. Add the JitPack repository to your maven POM file:</h3>
 							<div class="instructions-content">
 								<code>
 								&lt;repository&gt;<br/>
@@ -152,9 +152,10 @@
 			</div>
 			<div class="row download">
 				<div class="download-area center-block">
+
 					<div class="download-content">
 						<code>
-				curl http://minimesos.org/install | sh
+				curl http://minimesos.org/install | bash
 						</code>
 					</div>
 					<span>Latest version: 0.2.11</span>

@@ -1,18 +1,20 @@
 {
-    "name": "bfy-bootstrap-test",
-    "version": "0.0.0",
-    "description": "",
+    "name": "minimesos",
+    "version": "0.1.1",
+    "description": "minimesos.org front-end",
     "main": "index.js",
     "license": "MIT",
     "dependencies": {
 	"bootstrap": "^3.2.0",
 	"browserify": "^5.10.0",
 	"cssify": "^0.6.0",
-	"jquery": "^2.1.1"
+	"jquery": "^2.1.1",
+	"brfs": "^1.4.1"
     },
     "browserify": {
 	"transform": [
-	    "cssify"
+	    "cssify",
+	    "brfs"
 	]
     }
 }
