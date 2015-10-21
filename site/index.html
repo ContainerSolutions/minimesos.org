@@ -21,7 +21,7 @@
 		<div class="container">
 			<div class="row header-bg">
 				<div class="header col-md-6 col-md-offset-3 text-center ">
-					<div class="github"><a href="https://github.com/ContainerSolutions/mini-mesos"><img src="/assets/images/GitHUB_Button_96x109px.png"></a></div>	
+					<div class="github"><a href="https://github.com/ContainerSolutions/minimesos"><img src="/assets/images/GitHUB_Button_96x109px.png"></a></div>	
 					<div class="header-logo center-block">
 						
 					</div>
@@ -36,9 +36,9 @@
 				<div class="col-xs-6 col-md-4">
 					<ul>
 						<li>Test Driven Development for Mesos frameworks</li>
-						<li>Add a MiniMesos JUnit @ClassRule to start containerized Mesos cluster</li>
+						<li>Add a minimesos JUnit @ClassRule to start containerized Mesos cluster</li>
 						<li>Start the scheduler of your framework</li>
-						<li>Perform assertions on the cluster state via MiniMesos API</li>
+						<li>Perform assertions on the cluster state via minimesos API</li>
 						<li>After the test is done the cluster is destroyed</li>
 					</ul>
 
@@ -74,7 +74,7 @@
 							<div class="instructions-content">
 								<code>
 								dependencies {<br/>
-								&nbsp;&nbsp;compile 'com.containersolutions:mini-mesos:0.2.11'<br/>
+								&nbsp;&nbsp;compile 'com.containersolutions:minimesos:0.4.0'<br/>
 								&nbsp;}
 								</code>
 							</div>
@@ -84,7 +84,7 @@
 								@ClassRule<br/>
 								&nbsp;public static final MesosCluster CLUSTER = new MesosCluster(<br/>
 								&nbsp;&nbsp;MesosClusterConfig.builder()<br/>
-								&nbsp;&nbsp;&nbsp;.numberOfSlaves(3)<br/>
+								&nbsp;&nbsp;&nbsp;.slaveResources(new String[] {"ports(*):[8080-8080]"} )<br/>
 								&nbsp;&nbsp;&nbsp;.build()<br/>
 								&nbsp;);<br/>
 								</code>
@@ -106,8 +106,8 @@
 								<code>
 								&lt;dependency&gt;<br/>
 &nbsp;&nbsp;&lt;groupId&gt;com.containersolutions&lt;/groupId&gt; <br/>
-&nbsp;&nbsp;&lt;artifactId&gt;mini-mesos&lt;/artifactId&gt;<br/>
-&nbsp;&nbsp;&lt;version&gt;0.2.11&lt;/version&gt; <br/>
+&nbsp;&nbsp;&lt;artifactId&gt;minimesos&lt;/artifactId&gt;<br/>
+&nbsp;&nbsp;&lt;version&gt;0.4.0&lt;/version&gt; <br/>
 &lt;/dependency&gt;
 								</code>
 							</div>
@@ -117,7 +117,7 @@
 								@ClassRule<br/>
 								&nbsp;public static final MesosCluster CLUSTER = new MesosCluster(<br/>
 								&nbsp;&nbsp;MesosClusterConfig.builder()<br/>
-								&nbsp;&nbsp;&nbsp;.numberOfSlaves(3)<br/>
+								&nbsp;&nbsp;&nbsp;.slaveResources(new String[] {"ports(*):[8080-8080]"} )<br/>
 								&nbsp;&nbsp;&nbsp;.build()<br/>
 								&nbsp;);<br/>
 								</code>
@@ -146,19 +146,16 @@
 					<div class="text-center">
 					<img src="/assets/images/Icon_Integrated_146x167px.png"></img>
 					<h3>INTEGRATED</h3>
-					<p>Mini Mesos exposes framework, state and task information to its Cluster State API.</p>
+					<p>minimesos exposes framework, state and task information to its Cluster State API.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row download">
 				<div class="download-area center-block">
-
 					<div class="download-content">
-						<code>
-				curl http://minimesos.org/install | bash
-						</code>
+						<code>curl https://raw.githubusercontent.com/ContainerSolutions/minimesos/master/bin/install | bash</code>
 					</div>
-					<span>Latest version: 0.2.11</span>
+					<span>Latest version: 0.4.0</span>
 				</div>
 				
 			</div>
