@@ -2,4 +2,6 @@
 This is the source repository for minimesos.org using [hugo](https://gohugo.io)
 
 # Updates
-For changes made to the source files to be reflected correctly, you must regenarate sources with ```hugo``` command.
+After changes have been made run ```make deploy```
+
+NB: for deploy to work, you have to have aws client installed and setup correctly
