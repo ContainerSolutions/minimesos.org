@@ -2,7 +2,7 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 builddrafts = false
-baseurl = "http://minimesos.org/"
+baseurl = "https://minimesos.org/"
 canonifyurls = true
 theme = "minimesos"
 
