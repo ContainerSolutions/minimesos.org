@@ -1,8 +1,10 @@
+{{ $mmRelease := getJSON "https://api.github.com/repos/containersolutions/minimesos/releases" }}
+{{ $latestRelease := index $mmRelease 0 }}
 <div class="download-area center-block">
     <div class="download-content">
 	<code>curl https://raw.githubusercontent.com/ContainerSolutions/minimesos/master/bin/install | bash</code>
     </div>
-    <span>Latest version: 0.5.0</span>
+    <span>Latest version: {{ index $latestRelease "tag_name" }}</span>
     <br/>
-    <span>Read the latest verision doc at <a href="http://minimesos.readthedocs.org/en/latest/">minimesos.readthedocs.org</a></span>
+    <span><a href="http://minimesos.readthedocs.org/en/{{ index $latestRelease "tag_name" }}">Release documentation</a></span>
 </div>
