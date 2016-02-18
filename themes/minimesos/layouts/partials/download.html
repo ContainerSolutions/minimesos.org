@@ -2,7 +2,7 @@
 {{ $latestRelease := index $mmRelease 0 }}
 <div class="download-area center-block">
     <div class="download-content">
-	<code>curl https://raw.githubusercontent.com/ContainerSolutions/minimesos/master/bin/install | bash</code>
+	<code>curl -sSL https://minimesos.org/install | sh</code>
     </div>
     <span>Latest version: {{ index $latestRelease "tag_name" }}</span>
     <br/>
