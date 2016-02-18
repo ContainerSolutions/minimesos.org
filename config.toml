@@ -2,7 +2,6 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 builddrafts = false
-staticdir = "static"
 baseurl = ""
 canonifyurls = true
 theme = "minimesos"

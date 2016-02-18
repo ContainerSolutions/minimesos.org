@@ -28,7 +28,6 @@ body {
     width: 20px;
 }
 
-
 .infographic {
     background-image: url("/images/Infographic_574x433.png");
     background-position:top right;
@@ -39,9 +38,11 @@ body {
 .infographic-pane {
     margin-top:30px;
 }
+
 .infographic-pane ul {
     list-style-image: url("/images/Blue_Arrow.png");
 }
+
 .infographic-pane ul li {
     font-weight:300;
     font-size:20px;
