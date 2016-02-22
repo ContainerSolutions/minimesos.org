@@ -1,5 +1,4 @@
-{{ $mmRelease := getJSON "https://api.github.com/repos/containersolutions/minimesos/releases" }}
-{{ $latestRelease := index $mmRelease 0}}
+{{ $latestRelease := .Scratch.Get "LatestRelease"}}
 
 <h3>Step 1. Add the JitPack repository to your gradle build file:</h3>
 <div class="instructions-content">
