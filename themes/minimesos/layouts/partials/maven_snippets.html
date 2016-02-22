@@ -9,14 +9,17 @@
     </code>
 </div>
 <h3>Step 2. Add the dependency in the form:</h3>
+
+<h3>Step 3. Add a @ClassRule in your tests to start and destroy your Mesos test cluster</h3>
 <div class="instructions-content">
     <code>
-								&lt;dependency&gt;<br/>
-&nbsp;&nbsp;&lt;groupId&gt;com.containersolutions&lt;/groupId&gt; <br/>
-&nbsp;&nbsp;&lt;artifactId&gt;minimesos&lt;/artifactId&gt;<br/>
-&nbsp;&nbsp;&lt;version&gt;{{ index $latestRelease "tag_name" }}&lt;/version&gt; <br/>
-&lt;/dependency&gt;
+								@ClassRule<br/>
+								&nbsp;public static final MesosCluster CLUSTER = new MesosCluster(<br/>
+								&nbsp;&nbsp;new ClusterArchitecture.Builder()<br/>
+                                &nbsp;&nbsp;&nbsp;.withZooKeeper()<br/>
+                                &nbsp;&nbsp;&nbsp;.withMaster()<br/>
+                                &nbsp;&nbsp;&nbsp;.withSlave("ports(*):[8080-8080]").build()
+                                &nbsp;&nbsp;&nbsp;<br/>
+								&nbsp;);<br/>
     </code>
 </div>
-<h3>Step 3. Add a @ClassRule in your tests to start and destroy your Mesos test cluster</h3>
-
