@@ -1,6 +1,4 @@
-{{ $mmRelease := getJSON "https://api.github.com/repos/containersolutions/minimesos/releases" }}
-{{ $latestRelease := index $mmRelease 0 }}
-
+{{ $latestRelease := .Scratch.Get "LatestRelease"}}
 
 <div class="download-area center-block">
     <div class="download-content">
@@ -8,3 +6,4 @@
     </div>
     <span>Documentation: <a href="http://minimesos.readthedocs.org/en/{{ index $latestRelease "tag_name" }}">{{ index $latestRelease "tag_name" }}</a> | <a href="http://minimesos.readthedocs.org/en/latest">latest</a></span>
 </div>
+
