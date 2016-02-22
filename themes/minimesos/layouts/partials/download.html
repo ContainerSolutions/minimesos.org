@@ -1,4 +1,6 @@
-{{ $latestRelease := .Scratch.Get "LatestRelease"}}
+{{ $mmRelease := getJSON "https://api.github.com/repos/containersolutions/minimesos/releases" }}
+{{ $latestRelease := index $mmRelease 0 }}
+
 
 <div class="download-area center-block">
     <div class="download-content">
