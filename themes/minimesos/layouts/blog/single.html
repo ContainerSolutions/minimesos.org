@@ -1,0 +1,22 @@
+
+<html lang="en">
+    {{partial "blog-head.html" . }}
+    <body>
+	{{ partial "blog-header.html" .}}
+	<section class="main">
+	    <div class="container">
+		<div class="content">
+                    
+		    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		    <div class="meta">{{ .Date.Format .Site.Params.DateForm }}</div>
+		    <!-- {{ partial "page-heading.html" . }} -->
+		    <div class="markdown">
+			{{ .Content }}
+		    </div>
+		</div>
+	    </div>
+	</section>
+	{{partial "footer.html" . }}
+    </body>
+</html>
+

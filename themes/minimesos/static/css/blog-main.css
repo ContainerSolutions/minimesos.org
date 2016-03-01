@@ -1,4 +1,5 @@
 body {
+    font-size:20;
     font-family: 'Lato';
     font-weight: 300;
     background: url("/images/Background_1600x900px.jpg") top center no-repeat;
@@ -37,6 +38,11 @@ body {
 .menu img {
     width: 50px;
 }
+
+.content {
+    margin-bottom: 100px;
+}
+
 
 .infographic {
     background-image: url("/images/Infographic_574x433.png");
@@ -182,18 +188,17 @@ body {
     .menu img {
 	width: 40px;
     }
-
     .container {
 	width:768px;
     }
 
     .header-bg {
 	height:730px;	
-	background-size:768px;
+        background-size:768px;
         
     }
     .header {
-	margin-top:100px;               
+        margin-top:100px;               
     }
     .header-logo {
 	width:175px;
@@ -202,7 +207,7 @@ body {
     }
 
     .header-bg .header h4 {
-	/* margin-left:25%;
+        /* margin-left:25%;
                    width:50%; */
 	font-size:25px;
     }
@@ -216,7 +221,7 @@ body {
     }
 
     .infographic {
-	/* width:320px; */
+        /* width:320px; */
 	background-size:350px;
 	height:350px;               
 	margin-top:10px;
@@ -231,12 +236,12 @@ body {
         
     }
     .infographic-pane ul li {
-	font-size:18px;
+        font-size:18px;
     }
 
     .instructions {
-	background-size:768px;                
-	background-repeat:repeat-y;
+        background-size:768px;                
+        background-repeat:repeat-y;
     }
 
     .instructions-content {
@@ -244,7 +249,7 @@ body {
     }
 
     .instructions-content code {
-	font-size:12px;
+        font-size:12px;
     }
 
 
@@ -289,12 +294,12 @@ body {
     }
 
     .download .download-area {                
-	background-size:500px;
+        background-size:500px;
 	margin:20px 10px 20px 10px;
     }
 
     .download-area span {
-	font-size:12px;
+        font-size:12px;
 	margin-left:7px;
     }
 
@@ -317,8 +322,6 @@ body {
 
 }
 @media (min-width: 992px) {
-    
-
     .container {
 	width:970px;
     }
@@ -345,7 +348,7 @@ body {
     
     .header-bg {
 	height:730px;	
-	background-size:970px;                
+        background-size:970px;                
     }
 
     .infographic {
@@ -413,7 +416,7 @@ body {
     
     .header-bg {
 	height:110px; 
-	background-size:320px;
+        background-size:320px;
     }
 
     .header-bg .header h4 {
@@ -421,7 +424,7 @@ body {
     }
     
     .infographic {
-	width:300px;
+        width:300px;
 	background-size:100%;
 	height:250px;
     }
@@ -473,11 +476,10 @@ body {
     }
 
     .download-content code {
-	white-space:normal;
+        white-space:normal;
     }
     .download-area span {
 	margin-left:7px;
 	font-size:10px;
     }
 }
-

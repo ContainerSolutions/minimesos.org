@@ -13,3 +13,4 @@ theme = "minimesos"
 [params]
   description = "minimesos.org styles"
   author = ""
+  DateForm = "Jan 2, 2006"
