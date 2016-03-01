@@ -1,0 +1,22 @@
+<html lang="en">
+    {{partial "blog-head.html" . }}
+    <body>
+	{{ partial "blog-header.html" .}}
+	<section class="main">
+	    <div class="container">
+		<div class="content">
+                    
+		    <ul>
+			{{ range .Data.Pages.ByPublishDate }}
+			{{ if eq .Section "blog" }}
+			{{ partial "li.html" . }}
+			{{ end }}
+			{{ end }}
+		    </ul>
+		</div>
+	    </div>
+	</section>
+
+	{{partial "footer.html" . }}
+    </body>
+</html>
