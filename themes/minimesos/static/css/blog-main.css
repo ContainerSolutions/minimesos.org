@@ -20,23 +20,27 @@ body {
     color: #1c97e6;
 }
 .menu {
-    right:10px;
-    top:10px;
+    top:5px;
+    right:120px;
+    /* border:1px solid black; */
+    padding:5px;
     position:absolute;
-    /* width:60px; */
+    /* background: #FFF; */
+    width:200px;
     /* height:60px; */
 }
+
 .menu ul {
     list-style-type:none;
 }
 .menu li {
     float:left;
     margin-right: 15px;
-    font-size:30px;
+    font-size:25px;
     font-weight:bold;
 }
 .menu img {
-    width: 50px;
+    width: 40px;
 }
 
 .content {
@@ -376,7 +380,16 @@ body {
 	
     }
 }
-
+@media (min-width:500px) and (max-width: 768px) {
+    .menu {
+	right:20px;
+    }
+}
+@media (min-width:320px) and (max-width: 500px) {
+    .menu {
+	right:0px;
+    }
+}
 
 @media (min-width: 320px) and (max-width : 768px) {
     .menu li {

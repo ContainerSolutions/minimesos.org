@@ -29,6 +29,9 @@
 		    <!-- Nav tabs -->
 		    <ul class="nav nav-tabs" role="tablist">
 			<li role="presentation" class="active">
+			    <a href="#demo" aria-controls="home" role="tab" data-toggle="tab">Demo</a>
+			</li>
+			<li role="presentation">
 			    <a href="#gradle" aria-controls="home" role="tab" data-toggle="tab">Gradle</a>
 			</li>
 			<li role="presentation">
@@ -38,7 +41,10 @@
 
 		    <!-- Tab panes -->
 		    <div class="tab-content">
-			<div role="tabpanel" class="tab-pane active" id="gradle">
+			<div role="tabpanel" class="tab-pane active" id="demo">
+			    <script type="text/javascript" src="https://asciinema.org/a/5r2k6eus9mvoccy4vc8c5hdny.js" id="asciicast-5r2k6eus9mvoccy4vc8c5hdny" async></script>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="gradle">
 			    {{ partial "gradle_snippets.html" . }}
 			</div>
 			<div role="tabpanel" class="tab-pane" id="maven">
