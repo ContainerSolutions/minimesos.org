@@ -39,6 +39,10 @@ body {
 .menu ul li:last-child {
     float:right;
 }
+
+.content {
+    margin-bottom:70px;
+}
 .menu ul li span {
     font-size:15px;
 }
