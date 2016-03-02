@@ -1,21 +1,23 @@
-
+<!DOCTYPE html>
 <html lang="en">
-    {{partial "blog-head.html" . }}
+    {{partial "head.html" . }}
     <body>
-	{{ partial "blog-header.html" .}}
-	<section class="main">
-	    <div class="container">
-		<div class="content">
-                    
-		    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-		    <div class="meta">{{ .Date.Format .Site.Params.DateForm }}</div>
-		    <!-- {{ partial "page-heading.html" . }} -->
-		    <div class="markdown">
-			{{ .Content }}
-		    </div>
+        
+	<div class="container">
+           
+	    {{ partial "header.html" .}}
+	    {{ partial "menu.html" .}}
+	    <div class="content">
+                
+		<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		<div class="meta">{{ .Date.Format .Site.Params.DateForm }}</div>
+		<!-- {{ partial "page-heading.html" . }} -->
+		<div class="markdown">
+		    {{ .Content }}
 		</div>
 	    </div>
-	</section>
+	</div>
+        
 	{{partial "footer.html" . }}
     </body>
 </html>

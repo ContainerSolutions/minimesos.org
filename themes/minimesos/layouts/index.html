@@ -1,12 +1,12 @@
-{{ $mmRelease := getJSON "https://api.github.com/repos/containersolutions/minimesos/releases" }}
-{{ index $mmRelease 0 | $.Scratch.Set "LatestRelease"}}
 <!DOCTYPE html>
 <html lang="en">
     {{ partial "head.html" .}}
     <body>
+        
 	<div class="container">
 	    {{partial "header.html" . }}
-            
+	    {{ partial "menu.html" .}}
+            <div style="clear:left;"></div>
 	    <div class="row infographic-pane">
 		<div class="col-xs-12 col-sm-6 col-md-8">
 		    <div class="infographic"></div>

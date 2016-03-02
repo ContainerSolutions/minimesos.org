@@ -21,3 +21,6 @@
     <![endif]-->
     <!-- <script src="/js/main.js"></script> -->
 </head>
+
+{{ $mmRelease := getJSON "https://api.github.com/repos/containersolutions/minimesos/releases" }}
+{{ index $mmRelease 0 | $.Scratch.Set "LatestRelease"}}
