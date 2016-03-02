@@ -1,1 +1,10 @@
-<div class="menu"><ul><li><a href="/blog">Blog</a></li><li><a href="https://github.com/ContainerSolutions/minimesos"><img src="/images/GitHUB_Button_96x109px.png"></a></li></ul></div>
+{{ $latestRelease := .Scratch.Get "LatestRelease"}}
+
+<div class="col-xs-12 menu">
+    <ul>
+	<li><a href="/">Main</a></li>
+	<li><a href="/blog">Blog</a></li>
+	<li><a href="http://minimesos.readthedocs.org/en/{{ index $latestRelease "tag_name" }}">Docs</a> <span>(Release: {{ index $latestRelease "tag_name" }})</span></li>
+	<li><a href="https://github.com/ContainerSolutions/minimesos">GitHub</a></li>
+    </ul>
+</div>
