@@ -11,6 +11,6 @@ theme = "minimesos"
   tag = "tags"
 
 [params]
-  description = "minimesos.org styles"
+  description = "minimesos.org"
   author = ""
   DateForm = "Jan 2, 2006"
