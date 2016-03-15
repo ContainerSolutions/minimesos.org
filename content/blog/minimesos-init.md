@@ -5,8 +5,6 @@ title = "minimesos init CLI command"
 
 +++
 
-### minimesos init CLI command
-
 In this video, we'll show how to use `minimesos init` to start configuring your cluster
 
 {{< youtube KC9qzrb-brI >}}
