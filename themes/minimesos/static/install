@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# This script is meant for quick & easy install
-# Uses the latest release, unless a version identifier is specified as a parameter of this script.
+# A wrapper around minimesos installer script.
 
 command_exists() {
     command -v "$@" > /dev/null 2>&1
