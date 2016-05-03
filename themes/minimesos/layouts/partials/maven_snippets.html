@@ -21,13 +21,10 @@
 <h3>Step 3. Add a @ClassRule in your tests to start and destroy your Mesos test cluster</h3>
 <div class="instructions-content">
     <code>
-								@ClassRule<br/>
-								&nbsp;public static final MesosCluster CLUSTER = new MesosCluster(<br/>
-								&nbsp;&nbsp;new ClusterArchitecture.Builder()<br/>
-                                &nbsp;&nbsp;&nbsp;.withZooKeeper()<br/>
-                                &nbsp;&nbsp;&nbsp;.withMaster()<br/>
-                                &nbsp;&nbsp;&nbsp;.withSlave("ports(*):[8080-8080]").build()
-                                &nbsp;&nbsp;&nbsp;<br/>
-								&nbsp;);<br/>
+        @ClassRule<br/>
+        public static final MesosClusterTestRule RULE =<br/>
+        &nbsp;&nbsp;MesosClusterTestRule.fromFile("src/test/resources/discoverySystemTest");<br/>
+        <br/>
+        public static final MesosCluster CLUSTER = RULE.getMesosCluster();<br/>
     </code>
 </div>
