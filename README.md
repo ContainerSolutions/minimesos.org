@@ -1,5 +1,10 @@
 # minimesos.org
+
 This is the source repository for https://minimesos.org using [Hugo](https://gohugo.io)
+
+# How to run
+
+$ hugo server
 
 # minimesos.org hugo theme
 
