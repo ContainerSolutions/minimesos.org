@@ -4,7 +4,9 @@ This is the source repository for https://minimesos.org using [Hugo](https://goh
 
 # How to run
 
+```
 $ hugo server
+```
 
 # minimesos.org hugo theme
 
